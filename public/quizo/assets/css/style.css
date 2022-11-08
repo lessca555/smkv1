@@ -152,76 +152,80 @@ Author      : jthemes (https://themeforest.net/user/jthemes)
 }
 
 .soal .multisteps_form_panel[data-animation=slideVert] {
-  top: 30px;
+    top: 30px;
 }
 
 .soal .multisteps_form_panel[data-animation=slideVert].active {
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-  top: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    top: 0;
 }
 
 .soal .multisteps_form_panel[data-animation=fadeIn].active {
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 .soal .multisteps_form_panel[data-animation=scaleIn] {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 .soal .multisteps_form_panel[data-animation=scaleIn].active {
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .soal .form_content {
-  min-height: 48.4375rem;
-  background-image: url("../images/bg_1.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-color: #ffffff;
-  background-size: 93.125rem 16.5rem;
-  -webkit-box-shadow: 0 -3em 3em rgba(73, 73, 73, 0.1), 0.3em 0.3em 1em rgba(73, 73, 73, 0.1);
+    min-height: 48.4375rem;
+    background-image: url("../images/bg_1.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #ffffff;
+    background-size: 93.125rem 16.5rem;
+    -webkit-box-shadow: 0 -3em 3em rgba(73, 73, 73, 0.1), 0.3em 0.3em 1em rgba(73, 73, 73, 0.1);
           box-shadow: 0 -3em 3em rgba(73, 73, 73, 0.1), 0.3em 0.3em 1em rgba(73, 73, 73, 0.1);
-  display: none;
+    display: none;
 }
 
 .soal .multisteps_form_panel.active .form_content {
-  display: block;
+    display: block;
 }
 
-.soal .question_title h1 {
-  color: #222222;
-  font-size: 1.6875rem;
-  border: 1px solid #91e2a8;
-  border-bottom: 2px solid #91e2a8;
-  padding: 5rem;
-  border-radius: 0.3125rem;
-  background-color: #fff;
-  font-weight: 800;
-  margin-bottom: 10px;
+.soal .question_title{
+    width: 100%;
+}
+
+.soal .question_title h1{
+    color: #222222;
+    font-size: 1.6875rem;
+    border: 1px solid #91e2a8;
+    border-bottom: 2px solid #91e2a8;
+    padding: 5rem;
+    border-radius: 0.3125rem;
+    background-color: #fff;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .soal .form_items label {

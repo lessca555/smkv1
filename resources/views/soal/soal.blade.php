@@ -113,9 +113,11 @@
                         <div class="form_content my-5 shadow-lg">
 
                             <div class="row col-md-10 m-auto pt-5 form_items radio-list">
+
                                 <div class="question_title">
                                     <h1 class="text-center py-5">Dimanakah hitler meninggal?</h1>
                                 </div>
+
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
                                         <li>
@@ -127,6 +129,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
                                         <li>
@@ -138,6 +141,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
                                         <li>
@@ -149,6 +153,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
                                         <li>
@@ -160,7 +165,9 @@
                                         </li>
                                     </ul>
                                 </div>
+
                             </div>
+                            
                         </div>
                         <!-- Progress bar -->
                         <div class="step_progress position-absolute text-center">
