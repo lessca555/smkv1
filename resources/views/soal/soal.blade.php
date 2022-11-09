@@ -34,52 +34,53 @@
 <div class="bg-white pd-30 box-shadow border-radius-5 mb-30 xs-pd-20-10">
     <div class="table-responsive">
         <table
-            id="example"
-            class="table table-striped data-table"
-            style="width: 100%"
+        id="example"
+        class="table table-striped data-table"
+        style="width: 100%"
         >
-            <thead>
-                <tr>
-                    <th>ID Soal</th>
-                    <th>Nama Paket</th>
-                    <th>Deskripsi</th>
-                    <th>Jenis Soal</th>
-                    <th>KKM</th>
-                    <th>Waktu</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
+        <thead>
+            <tr>
+                <th>ID Soal</th>
+                <th>Nama Paket</th>
+                <th>Deskripsi</th>
+                <th>Jenis Soal</th>
+                <th>KKM</th>
+                <th>Waktu</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
 
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>a</td>
-                    <td>nigga</td>
-                    <td>uts</td>
-                    <td>70</td>
-                    <td>69 menit</td>
-                    <td>
-                        <button class="btn btn-primary" style="font-size: 10px;" id="kerjakan" onclick="openFullscreen()">Kerjakan</button>
-                    </td>
-                </tr>
-            </tbody>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>a</td>
+                <td>nigga</td>
+                <td>uts</td>
+                <td>70</td>
+                <td>69 menit</td>
+                <td>
+                    <button class="btn btn-primary" style="font-size: 10px;" id="kerjakan" onclick="openFullscreen()">Kerjakan</button>
+                </td>
+            </tr>
+        </tbody>
 
-            <tfoot>
-                <tr>
-                    <th>ID Soal</th>
-                    <th>Nama Paket</th>
-                    <th>Deskripsi</th>
-                    <th>Jenis Soal</th>
-                    <th>KKM</th>
-                    <th>Waktu</th>
-                    <th>Aksi</th>
-                </tr>
-            </tfoot>
-        </table>
+        <tfoot>
+            <tr>
+                <th>ID Soal</th>
+                <th>Nama Paket</th>
+                <th>Deskripsi</th>
+                <th>Jenis Soal</th>
+                <th>KKM</th>
+                <th>Waktu</th>
+                <th>Aksi</th>
+            </tr>
+        </tfoot>
 
-        <div class="soal" id="soal">
+    </table>
 
-        <div class="wrapper">
+    <div class="soal" id="soal">
+
+        {{-- <div class="wrapper">
             <!-- Top content -->
             <div class="container">
                 <div class="row">
@@ -167,7 +168,7 @@
                                 </div>
 
                             </div>
-                            
+
                         </div>
                         <!-- Progress bar -->
                         <div class="step_progress position-absolute text-center">
@@ -383,10 +384,205 @@
                     </form>
                 </div>
             </div>
+        </div> --}}
+
+        <div class="wrapper">
+
+            <form action="#" method="POST">
+                <div class="col-6 d-none d-md-block pt-5">
+                    <div class="count_box pe-3 me-5 rounded-pill d-flex align-items-center justify-content-center float-end">
+                        <div class="count_clock ps-2">
+                            <img  src="{{ url('quizo/assets/images/clock.png') }}" alt="image-not-found">
+                        </div>
+                        <div class="count_title">
+                            <h4 class="ps-1">Quiz</h4>
+                            <span class="px-1">Time start</span>
+                        </div>
+                        <div class="count_number rounded-pill px-3 d-flex justify-content-around align-items-center position-relative overflow-hidden countdown_timer" data-countdown="2022/11/5 15:00">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-md-12 m-auto pt-5 form_items radio-list">
+
+                    <div class="question_title">
+                        <h1 class="text-center py-5">Dimanakah hitler meninggal?</h1>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_1" class="position-relative step_1 d-inline-block animate__animated animate__fadeInRight animate_50ms active">
+                                    Berlin
+                                    <input id="opt_1" type="radio" name="stp_1_select_option" value="sea grass bed">
+                                    <span class="position-absolute">A</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_2" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_100ms">
+                                    Garut
+                                    <input id="opt_2" type="radio" name="stp_1_select_option" value="coral reefs">
+                                    <span class="position-absolute">B</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_3" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_150ms">
+                                    Sumenep
+                                    <input id="opt_3" type="radio" name="stp_1_select_option" value="None of the above">
+                                    <span class="position-absolute">C</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_4" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_200ms">
+                                    Kalibata City
+                                    <input id="opt_4" type="radio" name="stp_1_select_option" value="hot spots">
+                                    <span class="position-absolute">D</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row col-md-12 m-auto pt-5 form_items radio-list">
+
+                    <div class="question_title">
+                        <h1 class="text-center py-5">Siapakah presiden terakhir USSR?</h1>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_5" class="position-relative step_1 d-inline-block animate__animated animate__fadeInRight animate_50ms active">
+                                    Stalin
+                                    <input id="opt_5" type="radio" name="stp" value="sea grass bed">
+                                    <span class="position-absolute">A</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_6" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_100ms">
+                                    Mikhail Gorbachev
+                                    <input id="opt_6" type="radio" name="stp" value="coral reefs">
+                                    <span class="position-absolute">B</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_7" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_150ms">
+                                    Rhaegar Targaryen
+                                    <input id="opt_7" type="radio" name="stp" value="None of the above">
+                                    <span class="position-absolute">C</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_8" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_200ms">
+                                    Soeharto
+                                    <input id="opt_8" type="radio" name="stp" value="hot spots">
+                                    <span class="position-absolute">D</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row col-md-12 m-auto pt-5 form_items radio-list">
+
+                    <div class="question_title">
+                        <h1 class="text-center py-5">Siapakah pemimpin PKI?</h1>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_9" class="position-relative step_1 d-inline-block animate__animated animate__fadeInRight animate_50ms active">
+                                    Stalin
+                                    <input id="opt_9" type="radio" name="atp" value="sea grass bed">
+                                    <span class="position-absolute">A</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_10" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_100ms">
+                                    DN. Aidit
+                                    <input id="opt_10" type="radio" name="atp" value="coral reefs">
+                                    <span class="position-absolute">B</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_11" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_150ms">
+                                    Adolf Hitler
+                                    <input id="opt_11" type="radio" name="atp" value="None of the above">
+                                    <span class="position-absolute">C</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="opt_12" class="step_1 position-relative d-inline-block animate__animated animate__fadeInRight animate_200ms">
+                                    Soemanto
+                                    <input id="opt_12" type="radio" name="atp" value="hot spots">
+                                    <span class="position-absolute">D</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div style="margin: 10px 45%; font-size: 20px;">
+                    <button class="btn btn-success" type="submit">
+                        Kumpulkan
+                    </button>
+
+                </div>
+            </form>
         </div>
 
-        </div>
+
     </div>
+</div>
 </div>
 
 @endsection

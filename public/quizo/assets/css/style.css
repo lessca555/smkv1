@@ -17,7 +17,7 @@ Author      : jthemes (https://themeforest.net/user/jthemes)
 
 .soal .wrapper {
   width: 100%;
-  min-height: 120vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

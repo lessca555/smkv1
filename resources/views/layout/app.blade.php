@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{ url('quizo/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="{{ url('quizo/assets/css/style.css') }}">
+    <!-- no wizard css include -->
+    <link rel="stylesheet" href="{{ url('quizo/assets/css/nowiz.css') }}">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -95,7 +97,7 @@
 			}
 		});
 		$(".dial4").knob();
-		$({animatedVal: 0}).animate({animatedVal: 35}, {
+		$({animatedVal: 0}).animate({animatedVal: 100}, {
 			duration: 3000,
 			easing: "swing",
 			step: function() {
